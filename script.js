@@ -1,134 +1,249 @@
-alert("hello world");
-console.log("temitope is my friend");
-console.log(40 + 23 + 10);
-console.log(5 ** 5);
+// alert("hello world");
+// console.log("temitope is my friend");
+// console.log(40 + 23 + 10);
+// console.log(5 ** 5);
+
+// // let firstName = "Adams";
+// // console.log(firstName);
+
+// let gravity = 9.81;
+// const boilingPoint = 100;
+// console.log(gravity, boilingPoint);
+
+// let age = 20; // declaring age
+// console.log(age);
+// age = 21; // re-assigning age
+// console.log(age);
+
+// let fruit = "banana";
+// console.log(fruit);
+// fruit = "mango";
+// console.log(fruit);
+
+// //const
+// const city = "Lagos";
+// console.log(city);
+
+// // const yearofBirth = 2000;
+// // const PI = 3.14;
+// // console.log(yearofBirth, PI);
+
+// // var
+// var country = "Nigeria";
+// console.log(country);
+// country = "Ghana";
+// console.log(country);
+
+// // data types
+
+// // const a = "A";
+// // const b = "javaScript is an amazing language";
+// // console.log(b);
+// // const c = `we can also use backticks to create string`;
+// // console.log(c);
+
+// //boolean
+// const no = false;
+// const yes = true;
+// console.log(yes, no);
+// console.log(2 > 3);
+
+// // const myObject = {
+// //   firstName: "Adams",
+// //   lastName: "Temitope",
+// //   age: 23,
+// //   gender: "female",
+// //   isMarried: false,
+// // };
+// // console.log(myObject);
+
+// // checking data types
+// console.log(typeof "Adams"); // string
+// console.log(typeof 23); // number
+// console.log(typeof true); // boolean
+// console.log(typeof null); // object
+// console.log(typeof undefined); // undefined
+// console.log(typeof {}); // object
+// console.log(typeof []); // object
+// console.log(typeof 2 > 4);
+
+// //operators
+// //arithmetic operators
+// //addition
+// let a = 10;
+// let b = 5;
+// let c = a + b;
+// console.log(c);
+// //subtraction
+// const sellingPrice = 750;
+// const costPrice = 500;
+// const profitValue = sellingPrice - costPrice;
+// console.log(profitValue);
+
+// // calculating the area of a circle
+// const PI = 3.14;
+// let radius = 100;
+// let areaOfCircle = PI * radius * radius;
+// console.log(areaOfCircle);
+
+// // string concatenation
+// let word_1 = "Hello";
+// let word_2 = "World";
+// console.log(word_1 + " " + word_2);
 
 // let firstName = "Adams";
-// console.log(firstName);
+// let lastName = "Temitope";
+// let fullName = firstName + " " + lastName;
+// console.log(fullName);
 
-let gravity = 9.81;
-const boilingPoint = 100;
-console.log(gravity, boilingPoint);
+// console.log("My" + " name is " + " " + fullName + " ");
 
-let age = 20; // declaring age
-console.log(age);
-age = 21; // re-assigning age
-console.log(age);
+// // 2. assignment operators
+// let d = 2 + 5 + 8 - 2;
+// console.log("first", d);
 
-let fruit = "banana";
-console.log(fruit);
-fruit = "mango";
-console.log(fruit);
+// d += 10;
+// console.log("second", d);
+// d -= 5;
+// console.log("third", d);
+// d *= 2;
+// console.log("fourth", d);
+// d /= 4;
+// console.log("fifth", d);
+// d %= 3;
+// console.log("sixth", d);
 
-//const
-const city = "Lagos";
-console.log(city);
+// // 3. comparison operators
+// const ageAdult = 18;
+// let ageJohn = 25;
+// let ageDoe = 30;
+// let ageBoolean = ageJohn > ageDoe;
+// console.log(ageBoolean);
+// console.log(ageJohn >= ageAdult);
+// console.log(ageDoe <= ageAdult);
 
-// const yearofBirth = 2000;
-// const PI = 3.14;
-// console.log(yearofBirth, PI);
+// let q = 3;
+// let p = "3";
+// console.log(q == p); // loose equality
+// console.log(q === p); // strict equality
 
-// var
-var country = "Nigeria";
-console.log(country);
-country = "Ghana";
-console.log(country);
+// // not equal
+// // != loose not equal */
+// console.log(2 != 3); // true
+// // !== strict not equal */
+// console.log(2 !== 3); // true
 
-// data types
+// 4. logical operators
+// && ampersand (AND)
+// || pipe (OR)
+// !exclamation(NOT)
+// comparison operator && comparison operator
+//< && >
+let personsAge_1 = 20;
+if (personsAge_1 > 18 && personsAge_1 < 30) {
+  console.log("old");
 
-// const a = "A";
-// const b = "javaScript is an amazing language";
-// console.log(b);
-// const c = `we can also use backticks to create string`;
-// console.log(c);
+  //true and true = true
+  //true and false = false
+  //false and true = false
+  //false and false = false
+}
 
-//boolean
-const no = false;
-const yes = true;
-console.log(yes, no);
-console.log(2 > 3);
+// || pipe (OR)
+let personsAge_2 = 30;
+if (personsAge_2 > 18 || personsAge_2 > 20) {
+  console.log("young");
 
-// const myObject = {
-//   firstName: "Adams",
-//   lastName: "Temitope",
-//   age: 23,
-//   gender: "female",
-//   isMarried: false,
-// };
-// console.log(myObject);
+  //true or true = true
+  //true or false = true
+  //false or true = true
+  //false or false = false
+}
 
-// checking data types
-console.log(typeof "Adams"); // string
-console.log(typeof 23); // number
-console.log(typeof true); // boolean
-console.log(typeof null); // object
-console.log(typeof undefined); // undefined
-console.log(typeof {}); // object
-console.log(typeof []); // object
-console.log(typeof 2 > 4);
+// !exclamation(NOT)
+let personsAge_3 = 30;
+if (!(personsAge_3 > 40)) {
+  console.log("not young");
 
-//operators
-//arithmetic operators
-//addition
-let a = 10;
-let b = 5;
-let c = a + b;
-console.log(c);
-//subtraction
-const sellingPrice = 750;
-const costPrice = 500;
-const profitValue = sellingPrice - costPrice;
-console.log(profitValue);
+  // !(true) = false
+  // !(false) = true
+}
 
-// calculating the area of a circle
-const PI = 3.14;
-let radius = 100;
-let areaOfCircle = PI * radius * radius;
-console.log(areaOfCircle);
+// unary operators
+//++; increment
+let x = 5;
+x++;
+console.log(x);
 
-// string concatenation
-let word_1 = "Hello";
-let word_2 = "World";
-console.log(word_1 + " " + word_2);
+// post increment
+let y = 10;
+y++;
+console.log(y);
+//pre increment
+let z = 15;
+++z;
+console.log(z);
 
+//--;  decrement
+x--;
+console.log(x);
+
+// post decrement
+let w = 10;
+w--;
+console.log(w);
+
+// pre decrement
+let v = 15;
+--v;
+console.log(v);
+
+// typeof
 let firstName = "Adams";
-let lastName = "Temitope";
-let fullName = firstName + " " + lastName;
-console.log(fullName);
+console.log(typeof firstName);
+// delete
+delete firstName;
+console.log(typeof firstName);
+const person = { 10: "Adams", 20: "Temitope", 30: "John" };
+console.log(person);
+delete person[20];
+console.log(person);
+// ternary operator
+let age = 18;
+let canVote = age >= 18 ? "yes" : "no";
+console.log(canVote);
 
-console.log("My" + " name is " + " " + fullName + " ");
+let gender = "female";
+canDrive = gender === "female" ? console.log("female") : console.log("no");
 
-// 2. assignment operators
-let d = 2 + 5 + 8 - 2;
-console.log("first", d);
+//strings and template literals
+const firstName1 = "Adams";
+const lastName1 = "Temitope";
+const country = "Nigeria";
+const city = "Lagos";
+const birthYear = 2000;
+const currentYear = 2025;
+const isMarried = true;
+const job = "developer";
+const age1 = currentYear - birthYear;
+// traditional way of string concatenation
+console.log(
+  "I am " + firstName1 + " " + lastName1 + ". I am " + age1 + " years old."
+);
+console.log("I live in " + city + ", " + country + ". I am a " + job + ".");
+// using template literals
+console.log(`I am ${firstName1} ${lastName1}. I am ${age1} years old.`);
+console.log(`I live in ${city}, ${country}. I am a ${job}.`);
 
-d += 10;
-console.log("second", d);
-d -= 5;
-console.log("third", d);
-d *= 2;
-console.log("fourth", d);
-d /= 4;
-console.log("fifth", d);
-d %= 3;
-console.log("sixth", d);
-
-// 3. comparison operators
-const ageAdult = 18;
-let ageJohn = 25;
-let ageDoe = 30;
-let ageBoolean = ageJohn > ageDoe;
-console.log(ageBoolean);
-console.log(ageJohn >= ageAdult);
-console.log(ageDoe <= ageAdult);
-
-let q = 3;
-let p = "3";
-console.log(q == p); // loose equality
-console.log(q === p); // strict equality
-
-// not equal
-// != loose not equal */
-console.log(2 != 3); // true
-// !== strict not equal */
-console.log(2 !== 3); // true
+// creating a multiline string using template literals
+console.log(`I am ${firstName1} ${lastName1}.
+I am ${age1} years old.
+I live in ${city}, ${country}.
+I am a ${job}.`);
+const person = {
+  age: 23,
+  gender: female,
+  isMarried: false,
+};
+// ...existing code...
+// ...existing code...
