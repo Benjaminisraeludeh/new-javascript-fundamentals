@@ -171,79 +171,122 @@ if (!(personsAge_3 > 40)) {
 
 // unary operators
 //++; increment
-let x = 5;
-x++;
-console.log(x);
+// let x = 5;
+// x++;
+// console.log(x);
 
-// post increment
-let y = 10;
-y++;
-console.log(y);
-//pre increment
-let z = 15;
-++z;
-console.log(z);
+// // post increment
+// let y = 10;
+// y++;
+// console.log(y);
+// //pre increment
+// let z = 15;
+// ++z;
+// console.log(z);
 
-//--;  decrement
-x--;
-console.log(x);
+// //--;  decrement
+// x--;
+// console.log(x);
 
-// post decrement
-let w = 10;
-w--;
-console.log(w);
+// // post decrement
+// let w = 10;
+// w--;
+// console.log(w);
 
-// pre decrement
-let v = 15;
---v;
-console.log(v);
+// // pre decrement
+// let v = 15;
+// --v;
+// console.log(v);
 
-// typeof
-let firstName = "Adams";
-console.log(typeof firstName);
-// delete
-delete firstName;
-console.log(typeof firstName);
-const person = { 10: "Adams", 20: "Temitope", 30: "John" };
-console.log(person);
-delete person[20];
-console.log(person);
-// ternary operator
-let age = 18;
-let canVote = age >= 18 ? "yes" : "no";
-console.log(canVote);
+// // typeof
+// let firstName = "Adams";
+// console.log(typeof firstName);
+// // delete
+// delete firstName;
+// console.log(typeof firstName);
+// const person = { 10: "Adams", 20: "Temitope", 30: "John" };
+// console.log(person);
+// delete person[20];
+// console.log(person);
+// // ternary operator
+// let age = 18;
+// let canVote = age >= 18 ? "yes" : "no";
+// console.log(canVote);
 
-let gender = "female";
-canDrive = gender === "female" ? console.log("female") : console.log("no");
+// let gender = "female";
+// canDrive = gender === "female" ? console.log("female") : console.log("no");
 
-//strings and template literals
-const firstName1 = "Adams";
-const lastName1 = "Temitope";
-const country = "Nigeria";
-const city = "Lagos";
-const birthYear = 2000;
-const currentYear = 2025;
-const isMarried = true;
-const job = "developer";
-const age1 = currentYear - birthYear;
-// traditional way of string concatenation
-console.log(
-  "I am " + firstName1 + " " + lastName1 + ". I am " + age1 + " years old."
-);
-console.log("I live in " + city + ", " + country + ". I am a " + job + ".");
-// using template literals
-console.log(`I am ${firstName1} ${lastName1}. I am ${age1} years old.`);
-console.log(`I live in ${city}, ${country}. I am a ${job}.`);
+// //strings and template literals
+// const firstName1 = "Adams";
+// const lastName1 = "Temitope";
+// const country = "Nigeria";
+// const city = "Lagos";
+// const birthYear = 2000;
+// const currentYear = 2025;
+// const isMarried = true;
+// const job = "developer";
+// const age1 = currentYear - birthYear;
+// // traditional way of string concatenation
+// console.log(
+//   "I am " + firstName1 + " " + lastName1 + ". I am " + age1 + " years old."
+// );
+// console.log("I live in " + city + ", " + country + ". I am a " + job + ".");
+// // using template literals
+// console.log(`I am ${firstName1} ${lastName1}. I am ${age1} years old.`);
+// console.log(`I live in ${city}, ${country}. I am a ${job}.`);
 
-// creating a multiline string using template literals
-console.log(`I am ${firstName1} ${lastName1}.
-I am ${age1} years old.
-I live in ${city}, ${country}.
-I am a ${job}.`);
-const person = {
-  age: 23,
-  gender: female,
-  isMarried: false,
-};
-// ...existing code...
-// ...existing code...
+// // creating a multiline string using template literals
+// console.log(`I am ${firstName1} ${lastName1}.
+// I am ${age1} years old.
+// I live in ${city}, ${country}.
+// I am a ${job}.`);
+
+// control structures
+// 1. conditional statements
+// a. if...else statement
+// let age2 = 17;
+// if (age2 >= 18) {
+//   console.log("You are an adult.");
+// } else {
+//   console.log("You are a minor.");
+// }
+const age = 17;
+const isOldEnough = age >= 18;
+if (isOldEnough) {
+  console.log("You are old enough to drive.");
+} else {
+  console.log(
+    "You are not old enough to drive.you need to wait for " +
+      (18 - age) +
+      " years."
+  );
+}
+
+const birthYear = 2004;
+if (birthYear >= 2007) {
+  console.log("you are a Gen Z baby");
+} else {
+  console.log("you are a millenial");
+}
+
+// b. else if statement
+let score = 00;
+// possible conditions
+// 1. 0-39 = f
+// 2. 40-49 = d
+// 3. 50-59 = c
+// 4. 60-69 = b
+// 5. 70-100 = a
+if (score >= 0 && score <= 39) {
+  console.log(" grade F");
+} else if (score >= 40 && score <= 49) {
+  console.log(" grade D");
+} else if (score >= 50 && score <= 59) {
+  console.log(" grade C");
+} else if (score >= 60 && score <= 69) {
+  console.log(" grade B");
+} else if (score >= 70 && score <= 100) {
+  console.log(" grade A");
+} else {
+  console.log("invalid score");
+}
