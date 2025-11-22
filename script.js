@@ -290,3 +290,105 @@ if (score >= 0 && score <= 39) {
 } else {
   console.log("invalid score");
 }
+
+// c. switch statement
+let day = "monday";
+switch (day) {
+  case "monday":
+    console.log("Today is Monday");
+    break;
+  case "tuesday":
+    console.log("Today is Tuesday");
+    break;
+  case "wednesday":
+    console.log("Today is Wednesday");
+    break;
+  case "thursday":
+    console.log("Today is Thursday");
+    break;
+  case "friday":
+    console.log("Today is Friday");
+    break;
+  case "saturday":
+    console.log("Today is Saturday");
+    break;
+  case "sunday":
+    console.log("Today is Sunday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+ 
+// 2. loops
+// a. for loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+// b. while loop
+let j = 0;
+while (j < 10) {
+  console.log(j);
+  j++;
+}
+
+// c. do...while loop
+let k = 0;
+do {
+  console.log(k);
+  k++;
+} while (k < 10);
+
+// break and continue
+// break
+let m = 10;
+for (let m = 0; m <=10; m++) {
+  if (m === 5) {
+    break;
+  }
+  console.log(m);
+}
+
+// continue
+for (let n = 0; n < 10; n++) {
+  if (n === 5) {
+    continue;
+  }
+  console.log(n);
+} 
+let tree ="#" 
+for (let p = 1; p <= 7; p++) {
+ console.log(tree += "#");
+}
+
+
+// for (let q = 1; q <= 10; q++) {
+//   let row = "";
+//   for (let r = 1; r <= 10; r++) {
+//     row += "* ";
+//   }
+//   console.log(row);
+// }
+
+for (let s = 1; s <= 10; s++) {
+  let row = "";
+  for (let t = 1; t <= s; t++) {
+    row += "* ";
+  }
+  console.log(row);
+}
+
+
+// Arrays
+//ArrayOfFruits
+let fruit = ["apple", "banana", "orange",]
+console.log(fruit);
+console.log(fruit [fruit.length-1]);
+console.log(fruit[0]);
+console.log(fruit[1]);
+console.log(fruit[2]);
+
+//ArrayOfNumbers
+let arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10];
+console.log(arrayOfNumbers);
+console.log(arrayOfNumbers.length);
+console.log(arrayOfNumbers [arrayOfNumbers.length -1]);
