@@ -369,26 +369,146 @@ for (let p = 1; p <= 7; p++) {
 //   console.log(row);
 // }
 
-for (let s = 1; s <= 10; s++) {
-  let row = "";
-  for (let t = 1; t <= s; t++) {
-    row += "* ";
+  for (let s = 1; s <= 10; s++) {
+    let row = "";
+    for (let t = 1; t <= s; t++) {
+      row += "* ";
+    }
+    console.log(row);
   }
-  console.log(row);
+
+
+  // Arrays
+  //ArrayOfFruits
+  // let fruit = ["apple", "banana", "orange",]
+  // console.log(fruit);
+  // console.log(fruit [fruit.length-1]);
+  // console.log(fruit[0]);
+  // console.log(fruit[1]);
+  // console.log(fruit[2]);
+
+  // //ArrayOfNumbers
+  // let arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10];
+  // console.log(arrayOfNumbers);
+  // console.log(arrayOfNumbers.length);
+  // console.log(arrayOfNumbers [arrayOfNumbers.length -1]);
+
+//common array methods
+// array of countries
+// array of strings
+const countries = ["Nigeria", "Ghana", "Kenya", "South Africa", "Egypt"];
+console.log(countries);
+console.log(countries[3])
+
+// array of mixed data types
+const arr = [
+  "Adams",
+  23, 
+  true,
+  { country: "Nigeria", city: "Lagos" },
+  [1, 2, 3],
+];
+console.log(arr);
+console.log(arr.length);
+console.log(arr[3]);
+console.log(arr[3].city);
+console.log(arr[4][1]);
+
+//Adding items to an array
+//1. push(): adds an item to the end of an array
+// unshift(): adds an item to the beginning of an array
+const nums = [1, 2, 3] 
+console.log(nums);
+nums.push(4) 
+console.log(nums);
+
+nums.unshift(0)
+console.log(nums);
+//2. Removing items from an array
+// pop(): removes an item from the end of an array
+// shift(): removes an item from the beginning of an array
+nums.pop()
+console.log(nums);
+
+nums.shift()
+console.log(nums);
+
+// 3. reverse(): reverses the order of an array
+nums.reverse()
+console.log(nums);
+
+// 4 concatenate(): merges two or more arrays
+const firstList = [1,2,3];
+const secondList = [4, 5, 6];
+console.log(firstList);
+console.log(secondList);
+
+const thirdList = firstList.concat(secondList);
+const fourthList = secondList.concat(firstList);
+console.log(thirdList);
+console.log(fourthList);
+
+// 5. search items in an array
+// indexOf(): returns the index of the first occurrence of an item in an array
+// lastIndexOf(): returns the index of the last occurrence of an item in an array
+// includes(): returns true if an item is found in an array, otherwise false
+const numbers = [1, 2, 3, 4, 5, 6, 7,];
+console.log(numbers);
+console.log(numbers.indexOf(2)); //1
+console.log(numbers.indexOf(8)); //-1
+
+if (numbers.indexOf(10) === -1) {
+  console.log("number not found");
+
+}
+else {
+  console.log("number found");
+}
+
+console.log(numbers.lastIndexOf(3)); //2
+console.log(numbers.lastIndexOf(5)); //4
+console.log(numbers.includes(9));
+console.log(numbers.includes(6)); 
+
+// 6. join(): joins all items in an array
+// .join()
+const names = ["Adams", "Temitope", "John"];
+console.log(names);
+const namesString = (names.join(", "));
+console.log(namesString); 
+
+// 7, changing a string to an array
+// split()
+let js = "JavaScript";
+console.log(js);
+let jsCap = js.toUpperCase();
+console.log(jsCap);
+let jsCapArray = jsCap.split();
+console.log(jsCapArray);
+
+console.log(jsCap.split(""));
+
+let companiesString = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+console.log(companiesString);
+const companiesArray = companiesString.split(", ");
+console.log(companiesArray);
+
+// 8. slice(): extracts a section of an array and returns a new array
+// .slice()
+const companiesStringArrayNew = companiesArray.slice();
+console.log(companiesStringArrayNew);
+
+let text = "I am a programmer and i love programming.";
+console.log(text);
+console.log(text.slice);
+
+// for loop with an array
+const figure = [1, 2, 3, 4, 5, 6, 7,];
+numbers[1]
+for (let i = 0; i <= 10; i++) {
+
+  console.log(figure[i]);
 }
 
 
-// Arrays
-//ArrayOfFruits
-let fruit = ["apple", "banana", "orange",]
-console.log(fruit);
-console.log(fruit [fruit.length-1]);
-console.log(fruit[0]);
-console.log(fruit[1]);
-console.log(fruit[2]);
-
-//ArrayOfNumbers
-let arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10];
-console.log(arrayOfNumbers);
-console.log(arrayOfNumbers.length);
-console.log(arrayOfNumbers [arrayOfNumbers.length -1]);
+ 
