@@ -396,119 +396,194 @@ for (let p = 1; p <= 7; p++) {
 //common array methods
 // array of countries
 // array of strings
-const countries = ["Nigeria", "Ghana", "Kenya", "South Africa", "Egypt"];
-console.log(countries);
-console.log(countries[3])
+// const countries = ["Nigeria", "Ghana", "Kenya", "South Africa", "Egypt"];
+// console.log(countries);
+// console.log(countries[3])
 
-// array of mixed data types
-const arr = [
-  "Adams",
-  23, 
-  true,
-  { country: "Nigeria", city: "Lagos" },
-  [1, 2, 3],
-];
-console.log(arr);
-console.log(arr.length);
-console.log(arr[3]);
-console.log(arr[3].city);
-console.log(arr[4][1]);
+// // array of mixed data types
+// const arr = [
+//   "Adams",
+//   23,
+//   true,
+//   { country: "Nigeria", city: "Lagos" },
+//   [1, 2, 3],
+// ];
+// console.log(arr);
+// console.log(arr.length);
+// console.log(arr[3]);
+// console.log(arr[3].city);
+// console.log(arr[4][1]);
 
-//Adding items to an array
-//1. push(): adds an item to the end of an array
-// unshift(): adds an item to the beginning of an array
-const nums = [1, 2, 3] 
-console.log(nums);
-nums.push(4) 
-console.log(nums);
+// //Adding items to an array
+// //1. push(): adds an item to the end of an array
+// // unshift(): adds an item to the beginning of an array
+// const nums = [1, 2, 3]
+// console.log(nums);
+// nums.push(4)
+// console.log(nums);
 
-nums.unshift(0)
-console.log(nums);
-//2. Removing items from an array
-// pop(): removes an item from the end of an array
-// shift(): removes an item from the beginning of an array
-nums.pop()
-console.log(nums);
+// nums.unshift(0)
+// console.log(nums);
+// //2. Removing items from an array
+// // pop(): removes an item from the end of an array
+// // shift(): removes an item from the beginning of an array
+// nums.pop()
+// console.log(nums);
 
-nums.shift()
-console.log(nums);
+// nums.shift()
+// console.log(nums);
 
-// 3. reverse(): reverses the order of an array
-nums.reverse()
-console.log(nums);
+// // 3. reverse(): reverses the order of an array
+// nums.reverse()
+// console.log(nums);
 
-// 4 concatenate(): merges two or more arrays
-const firstList = [1,2,3];
-const secondList = [4, 5, 6];
-console.log(firstList);
-console.log(secondList);
+// // 4 concatenate(): merges two or more arrays
+// const firstList = [1,2,3];
+// const secondList = [4, 5, 6];
+// console.log(firstList);
+// console.log(secondList);
 
-const thirdList = firstList.concat(secondList);
-const fourthList = secondList.concat(firstList);
-console.log(thirdList);
-console.log(fourthList);
+// const thirdList = firstList.concat(secondList);
+// const fourthList = secondList.concat(firstList);
+// console.log(thirdList);
+// console.log(fourthList);
 
-// 5. search items in an array
-// indexOf(): returns the index of the first occurrence of an item in an array
-// lastIndexOf(): returns the index of the last occurrence of an item in an array
-// includes(): returns true if an item is found in an array, otherwise false
-const numbers = [1, 2, 3, 4, 5, 6, 7,];
-console.log(numbers);
-console.log(numbers.indexOf(2)); //1
-console.log(numbers.indexOf(8)); //-1
+// // 5. search items in an array
+// // indexOf(): returns the index of the first occurrence of an item in an array
+// // lastIndexOf(): returns the index of the last occurrence of an item in an array
+// // includes(): returns true if an item is found in an array, otherwise false
+// const numbers = [1, 2, 3, 4, 5, 6, 7,];
+// console.log(numbers);
+// console.log(numbers.indexOf(2)); //1
+// console.log(numbers.indexOf(8)); //-1
 
-if (numbers.indexOf(10) === -1) {
-  console.log("number not found");
+// if (numbers.indexOf(10) === -1) {
+//   console.log("number not found");
 
-}
-else {
-  console.log("number found");
-}
+// }
+// else {
+//   console.log("number found");
+// }
 
-console.log(numbers.lastIndexOf(3)); //2
-console.log(numbers.lastIndexOf(5)); //4
-console.log(numbers.includes(9));
-console.log(numbers.includes(6)); 
+// console.log(numbers.lastIndexOf(3)); //2
+// console.log(numbers.lastIndexOf(5)); //4
+// console.log(numbers.includes(9));
+// console.log(numbers.includes(6));
 
-// 6. join(): joins all items in an array
-// .join()
-const names = ["Adams", "Temitope", "John"];
-console.log(names);
-const namesString = (names.join(", "));
-console.log(namesString); 
+// // 6. join(): joins all items in an array
+// // .join()
+// const names = ["Adams", "Temitope", "John"];
+// console.log(names);
+// const namesString = (names.join(", "));
+// console.log(namesString);
 
-// 7, changing a string to an array
-// split()
-let js = "JavaScript";
-console.log(js);
-let jsCap = js.toUpperCase();
-console.log(jsCap);
-let jsCapArray = jsCap.split();
-console.log(jsCapArray);
+// // 7, changing a string to an array
+// // split()
+// let js = "JavaScript";
+// console.log(js);
+// let jsCap = js.toUpperCase();
+// console.log(jsCap);
+// let jsCapArray = jsCap.split();
+// console.log(jsCapArray);
 
-console.log(jsCap.split(""));
+// console.log(jsCap.split(""));
 
-let companiesString = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
-console.log(companiesString);
-const companiesArray = companiesString.split(", ");
-console.log(companiesArray);
+// let companiesString = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+// console.log(companiesString);
+// const companiesArray = companiesString.split(", ");
+// console.log(companiesArray);
 
-// 8. slice(): extracts a section of an array and returns a new array
-// .slice()
-const companiesStringArrayNew = companiesArray.slice();
-console.log(companiesStringArrayNew);
+// // 8. slice(): extracts a section of an array and returns a new array
+// // .slice()
+// const companiesStringArrayNew = companiesArray.slice();
+// console.log(companiesStringArrayNew);
 
-let text = "I am a programmer and i love programming.";
-console.log(text);
-console.log(text.slice);
+// let text = "I am a programmer and i love programming.";
+// console.log(text);
+// console.log(text.slice);
 
-// for loop with an array
-const figure = [1, 2, 3, 4, 5, 6, 7,];
-numbers[1]
-for (let i = 0; i <= 10; i++) {
+// // for loop with an array
+// const figure = [1, 2, 3, 4, 5, 6, 7,];
+// numbers[1]
+// for (let i = 0; i <= 10; i++) {
 
-  console.log(figure[i]);
-}
+//   console.log(figure[i]);
+// }
 
 
- 
+// const names = ["Adams", "Temitope", "John", "Doe", "Smith"]; {
+//   for (let i = 0; i <= names.length-1; i++)
+//     console.log(names[i]);
+// }
+
+// // sum of numbers in an array
+// const numbers = [1, 2, 3, 4, 5, 6 ,7,];
+// let sum = 0;
+// console.log(sum);
+// for (let i = 0; i <= numbers.length-1; i++) {
+
+//   sum = sum + numbers[i];
+// }
+//   console.log(sum);
+
+// square of numbers in an array
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let newArr = [];
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   numbers[i]
+  
+//   newArr.push(numbers[i] ** 2);
+// }
+// console.log(newArr);
+
+// uppercase of countries in an array
+
+// const countries = ["Nigeria", "Ghana", "Kenya", "South Africa", "Egypt"];
+// let newArrCountries = [];
+// let strcountries = "";
+// for (let i = 0; i <= countries.length - 1; i++) {
+//   countries[i];
+//   strcountries = countries[i].toUpperCase();
+//   newArrCountries.push(strcountries);
+// }
+// console.log(newArrCountries);
+
+// separating even and odd numbers in an array
+
+//  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenNumbers = [];
+// let oddNumbers = [];
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     evenNumbers.push(numbers[i]);
+//   } else {
+//     oddNumbers.push(numbers[i]);
+//   }
+// }
+// console.log("Even Numbers:", evenNumbers);
+// console.log("Odd Numbers:", oddNumbers);
+
+// // objects
+// const person = {
+//   firstName: "Adams",
+//   lastName: "Temitope",
+//   age: 23,
+//   country: "Nigeria",
+//   city: "Lagos",
+//   skills: ["JavaScript", "React", "Node", "Python"],
+//   isMarried: false,
+// };
+// console.log(person);
+// console.log(person.firstName);
+// console.log(person["lastName"]);
+// console.log(person.skills);
+// console.log(person.skills[2]);
+
+// person.job = "developer";
+// console.log(person);     
+// person.isMarried = true;
+// console.log(person);
+
+// person.skills.push("HTML", "CSS");
+// console.log(person.skills);
