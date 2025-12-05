@@ -568,7 +568,7 @@ for (let p = 1; p <= 7; p++) {
 // const person = {
 //   firstName: "Adams",
 //   lastName: "Temitope",
-//   age: 23,
+//   age: 23,ggg
 //   country: "Nigeria",
 //   city: "Lagos",
 //   skills: ["JavaScript", "React", "Node", "Python"],
@@ -581,9 +581,105 @@ for (let p = 1; p <= 7; p++) {
 // console.log(person.skills[2]);
 
 // person.job = "developer";
-// console.log(person);     
+// console.log(person);
 // person.isMarried = true;
 // console.log(person);
 
 // person.skills.push("HTML", "CSS");
 // console.log(person.skills);
+
+// functions
+// function greet() {
+//   console.log("hello and Welcome to class Today");
+// }
+// greet();
+
+// function addTowNumbers() {
+//   let a = 3;
+//   let b = 5;
+//   let sum = a + b;
+//   console.log(sum);
+// } 
+// addTowNumbers();
+
+// // function Expression
+// const sayHi = function () {
+//   return ("Hi there!");
+// }
+// console.log(sayHi());
+
+// // Arrow function
+// const greet2 = () => {
+//   return "Hello World, how are you!";
+// }
+// console.log (greet2());
+
+
+// const square = (n) => n * n;
+// console.log(square(5)); 
+// const squareOfNumber = (n) => {
+//   return n * n;
+// }
+
+// // anonymous function
+// setTimeout(function () {
+//   console.log("This message is shown after 2 seconds");
+// }, 2000);
+
+// // callback function
+// function processUserInput(callback) {
+//   const name = "Adams";
+//   callback(name);
+// }
+// processUserInput(function (name) {
+//   console.log("Hello " + name);
+// });
+ 
+// function square() {
+//   let n = 5;
+//   let sqr = n * n;
+//   return sqr;
+// }
+// console.log(square());
+
+// function printFullName() 
+//   {
+//   let firstName = "Adams";
+//   let lastName = "Temitope";
+//   let fullName = firstName + " " + lastName;
+//   return fullName;
+// }
+// console.log(printFullName());
+
+// // function with parameters
+// function addTwoNumbers(a, b) {
+//   let sum = a + b;
+//   return sum;
+// }
+// console.log(addTwoNumbers(3, 5));
+
+// function greet3(name) {
+//   return "Hello " + name;
+// }
+// console.log(greet3("Adams"));
+
+// function squareOfNumber(n) {
+//   let square = n * n;
+//   return square;
+// }
+// console.log(squareOfNumber(5));
+// console.log(squareOfNumber(10));
+
+// // Area of a circle
+// function areaOfCircle(radius) {
+//   let result = Math.PI * (radius * radius);
+//   return result;
+// }
+// console.log(areaOfCircle(10));
+// console.log(areaOfCircle(5));
+
+funtions printFullName(firstName, lastName) {
+  let fullName = firstName + " " + lastName;
+  return fullName;
+}
+console.log(printFullName("Adams", "Temitope")); 
